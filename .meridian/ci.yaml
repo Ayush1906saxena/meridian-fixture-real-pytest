@@ -1,0 +1,4 @@
+{
+  "pack": "python",
+  "test": "python -m venv /tmp/venv && . /tmp/venv/bin/activate && pip install -q -U pip && mkdir -p .meridian-reports && SETUPTOOLS_SCM_PRETEND_VERSION=9.1.0 pip install -q -e \".[dev]\" && python -m pytest -q testing/test_cacheprovider.py --junitxml=.meridian-reports/junit.xml"
+}
